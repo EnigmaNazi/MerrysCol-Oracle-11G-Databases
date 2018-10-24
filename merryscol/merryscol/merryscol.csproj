@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8551DBCE-F533-44F6-9D75-6CB7182D321C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>merryscol</RootNamespace>
+    <AssemblyName>merryscol</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BARANG_METRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BARANG_METRO.Designer.cs">
+      <DependentUpon>BARANG_METRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_BARANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_BARANG.Designer.cs">
+      <DependentUpon>FRM_BARANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_LOGIN.Designer.cs">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MASUK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MASUK.Designer.cs">
+      <DependentUpon>FRM_MASUK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_MENU_UTAMA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_MENU_UTAMA.Designer.cs">
+      <DependentUpon>FRM_MENU_UTAMA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_ORDER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_ORDER.Designer.cs">
+      <DependentUpon>FRM_ORDER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PELANGGAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PELANGGAN.Designer.cs">
+      <DependentUpon>FRM_PELANGGAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PENERIMAAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PENERIMAAN.Designer.cs">
+      <DependentUpon>FRM_PENERIMAAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_PENJUALAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_PENJUALAN.Designer.cs">
+      <DependentUpon>FRM_PENJUALAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_SUPPLIER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_SUPPLIER.Designer.cs">
+      <DependentUpon>FRM_SUPPLIER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="barang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>barang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan_Barang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan_Barang.Designer.cs">
+      <DependentUpon>Laporan_Barang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_METRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_METRO.Designer.cs">
+      <DependentUpon>LOGIN_METRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU_METRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU_METRO.Designer.cs">
+      <DependentUpon>MENU_METRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PELANGGAN_METRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PELANGGAN_METRO.Designer.cs">
+      <DependentUpon>PELANGGAN_METRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PENJUALAN_METRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PENJUALAN_METRO.Designer.cs">
+      <DependentUpon>PENJUALAN_METRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BARANG_METRO.resx">
+      <DependentUpon>BARANG_METRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_BARANG.resx">
+      <DependentUpon>FRM_BARANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_LOGIN.resx">
+      <DependentUpon>FRM_LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MASUK.resx">
+      <DependentUpon>FRM_MASUK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_MENU_UTAMA.resx">
+      <DependentUpon>FRM_MENU_UTAMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_ORDER.resx">
+      <DependentUpon>FRM_ORDER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PELANGGAN.resx">
+      <DependentUpon>FRM_PELANGGAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PENERIMAAN.resx">
+      <DependentUpon>FRM_PENERIMAAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_PENJUALAN.resx">
+      <DependentUpon>FRM_PENJUALAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRM_SUPPLIER.resx">
+      <DependentUpon>FRM_SUPPLIER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="barang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>barang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan_Barang.resx">
+      <DependentUpon>Laporan_Barang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_METRO.resx">
+      <DependentUpon>LOGIN_METRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU_METRO.resx">
+      <DependentUpon>MENU_METRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PELANGGAN_METRO.resx">
+      <DependentUpon>PELANGGAN_METRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PENJUALAN_METRO.resx">
+      <DependentUpon>PENJUALAN_METRO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adolf Hitler Nazi Flag %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adolf Hitler Nazi Flag %286.1%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adolf Hitler Nazi Flag %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adolf Hitler Nazi Flag %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adolf Hitler Nazi Flag %288%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
